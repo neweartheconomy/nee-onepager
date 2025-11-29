@@ -88,10 +88,10 @@ const Hero: React.FC = () => {
 
       </div>
 
-      {/* Scroll Indicator - Subtle chevron */}
+      {/* Scroll Indicator - Subtle chevron (hidden on mobile) */}
       <a
         href="#problem"
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 opacity-40 hover:opacity-80 transition-opacity cursor-pointer"
+        className="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2 opacity-40 hover:opacity-80 transition-opacity cursor-pointer"
       >
         <svg
           className="w-6 h-6 text-sand animate-bounce"
