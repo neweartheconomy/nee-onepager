@@ -47,11 +47,14 @@ const Booking: React.FC = () => {
 
           <div className="lg:w-1/2 w-full">
             <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-                <div
-                  className="calendly-inline-widget"
-                  data-url="https://calendly.com/jonas-newearth-economy/social-funnel-call"
-                  style={{ minWidth: '320px', height: '700px' }}
-                ></div>
+                <iframe
+                  src="https://calendly.com/jonas-newearth-economy/social-funnel-call?hide_gdpr_banner=1&background_color=ffffff&text_color=1A3636&primary_color=D6BD98"
+                  width="100%"
+                  height="700"
+                  frameBorder="0"
+                  title="Schedule a call"
+                  className="min-w-[320px]"
+                ></iframe>
             </div>
           </div>
 
