@@ -24,13 +24,13 @@ const Solution: React.FC = () => {
               The Solution
             </span>
             <h2 className="font-serif text-4xl md:text-5xl mb-6 leading-tight">
-              Introducing <span className="text-sand">Sacred Systems™</span>
+              AI That Works <span className="text-sand">With You</span>
             </h2>
             <p className="text-gray-300 text-lg mb-6 leading-relaxed font-light">
               What if the back-end of your business actually ran itself, without losing what makes your work yours?
             </p>
             <p className="text-gray-300 text-lg mb-10 leading-relaxed font-light">
-              Sacred Systems™ is a done-for-you AI infrastructure that handles content creation, client communications, and operations. Trained on your voice, your values, and your way of working.
+              A done-for-you AI infrastructure that handles content creation, client communications, and operations. Trained on your voice, your values, and your way of working.
             </p>
 
             <ul className="space-y-5">
@@ -54,12 +54,12 @@ const Solution: React.FC = () => {
             </div>
           </div>
 
-          {/* Image - Sacred Systems visualization */}
+          {/* Image - AI Systems visualization */}
           <div className="lg:w-1/2">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/visual3.jpeg"
-                alt="Sacred Systems visualization"
+                src="/solutionnew.jpg"
+                alt="The Solution"
                 className="w-full h-auto object-cover"
               />
             </div>

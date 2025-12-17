@@ -12,7 +12,7 @@ const Booking: React.FC = () => {
               Curious How This Could <br/> Work For You?
             </h2>
             <p className="text-gray-300 text-lg mb-8 font-light">
-              Book a free discovery call to see how Sacred Systems™ can help you reclaim your time and scale without burning out.
+              Book a free discovery call to see how AI-powered systems can help you reclaim your time and scale without burning out.
             </p>
 
             <div className="space-y-4 mb-10">
@@ -38,7 +38,7 @@ const Booking: React.FC = () => {
                  <div>
                    <h4 className="font-bold text-sand mb-1">What happens on the call?</h4>
                    <p className="text-sm text-gray-300">
-                     We'll look at what's taking up most of your time, what's working, and whether Sacred Systems makes sense for your situation. It's a conversation, not a sales pitch.
+                     We'll look at what's taking up most of your time, what's working, and whether this approach makes sense for your situation.
                    </p>
                  </div>
                </div>

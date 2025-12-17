@@ -10,13 +10,13 @@ const About: React.FC = () => {
           <div className="lg:w-5/12 order-2 lg:order-1">
             <div className="relative">
               <img
-                src="/jonas3.jpeg"
+                src="/whythiswork.jpeg"
                 alt="Jonas - Founder"
                 className="rounded-2xl shadow-xl w-full h-auto object-cover aspect-[3/4]"
               />
               <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm px-5 py-3 rounded-xl shadow-md">
                 <p className="font-serif text-deep-teal font-bold">Jonas</p>
-                <p className="text-sage text-xs uppercase tracking-wider">Founder</p>
+                <p className="text-sage text-xs uppercase tracking-wider">Founder, New Earth Economy</p>
               </div>
             </div>
           </div>

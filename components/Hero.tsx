@@ -1,24 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { ArrowRight, Play, X } from 'lucide-react';
+import React from 'react';
+import { ArrowRight, Play } from 'lucide-react';
 
 const Hero: React.FC = () => {
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
-
-  // Close on escape key
-  useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setIsVideoOpen(false);
-    };
-    if (isVideoOpen) {
-      document.addEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'hidden';
-    }
-    return () => {
-      document.removeEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'unset';
-    };
-  }, [isVideoOpen]);
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-deep-teal text-white pt-20">
       
@@ -57,7 +40,7 @@ const Hero: React.FC = () => {
         
         {/* Subhead - Visual Hierarchy Level 2 */}
         <p className="font-sans text-lg md:text-xl lg:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed font-light animate-fade-in-up delay-200">
-          Sacred Systems™ installs AI as your ally. Reclaim your time and scale your impact without compromising your voice.
+          We install AI as your ally. Reclaim your time and scale your impact without compromising your voice.
         </p>
         
         {/* CTA Area - Micro-interactions */}
@@ -74,15 +57,15 @@ const Hero: React.FC = () => {
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
           </a>
 
-          <button
-            onClick={() => setIsVideoOpen(true)}
+          <a
+            href="#video"
             className="group px-8 py-4 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-white hover:bg-white/10 hover:border-sand/40 transition-all duration-300 flex items-center gap-3"
           >
             <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-sand group-hover:text-deep-teal transition-all duration-300 scale-100 group-hover:scale-110">
               <Play size={14} fill="currentColor" className="ml-1" />
             </div>
             <span className="font-semibold tracking-wide">Watch the Vision</span>
-          </button>
+          </a>
 
         </div>
 
@@ -102,40 +85,6 @@ const Hero: React.FC = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </a>
-
-      {/* Video Modal */}
-      {isVideoOpen && (
-        <div
-          className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8"
-          onClick={() => setIsVideoOpen(false)}
-        >
-          {/* Backdrop */}
-          <div className="absolute inset-0 bg-deep-teal/95 backdrop-blur-md" />
-
-          {/* Modal Content */}
-          <div
-            className="relative w-full max-w-4xl aspect-video bg-deep-teal rounded-2xl overflow-hidden shadow-2xl border border-sand/20"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* Close Button */}
-            <button
-              onClick={() => setIsVideoOpen(false)}
-              className="absolute -top-12 right-0 md:top-4 md:right-4 z-10 w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-sand hover:text-deep-teal transition-all duration-300"
-            >
-              <X size={20} />
-            </button>
-
-            {/* YouTube Embed */}
-            <iframe
-              src="https://www.youtube.com/embed/y6x6RZkllMU?autoplay=1&rel=0"
-              title="The Vision"
-              className="w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        </div>
-      )}
 
     </section>
   );

@@ -38,7 +38,8 @@ const Navbar: React.FC = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
           <a href="#problem" className={linkClasses}>The Problem</a>
-          <a href="#solution" className={linkClasses}>Sacred Systems™</a>
+          <a href="#video" className={linkClasses}>Video</a>
+          <a href="#solution" className={linkClasses}>The Solution</a>
           <a href="#about" className={linkClasses}>About</a>
           <a href="#testimonials" className={linkClasses}>Stories</a>
           <a
@@ -62,7 +63,8 @@ const Navbar: React.FC = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-deep-teal/95 backdrop-blur-md border-t border-forest-green py-6 px-6 flex flex-col space-y-4 shadow-xl">
            <a href="#problem" className="text-white hover:text-sand block py-2" onClick={() => setIsMobileMenuOpen(false)}>The Problem</a>
-           <a href="#solution" className="text-white hover:text-sand block py-2" onClick={() => setIsMobileMenuOpen(false)}>Sacred Systems™</a>
+           <a href="#video" className="text-white hover:text-sand block py-2" onClick={() => setIsMobileMenuOpen(false)}>Video</a>
+           <a href="#solution" className="text-white hover:text-sand block py-2" onClick={() => setIsMobileMenuOpen(false)}>The Solution</a>
            <a href="#about" className="text-white hover:text-sand block py-2" onClick={() => setIsMobileMenuOpen(false)}>About</a>
            <a href="#testimonials" className="text-white hover:text-sand block py-2" onClick={() => setIsMobileMenuOpen(false)}>Stories</a>
            <a

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Problem from './components/Problem';
+import VideoSection from './components/VideoSection';
 import Solution from './components/Solution';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
@@ -54,6 +55,7 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <Problem />
+        <VideoSection />
         <Solution />
         <About />
         <Testimonials />
